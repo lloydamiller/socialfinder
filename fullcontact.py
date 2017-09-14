@@ -10,6 +10,7 @@ import requests
 import re
 import time
 import json
+from keys import fullcontactapi
 
 def from_email(email):
 
@@ -22,7 +23,7 @@ def from_email(email):
 
     results = {}
 
-    full_contact_api_key = "" # Enter Full Contact API Key
+    full_contact_api_key = fullcontactapi # Enter Full Contact API Key
 
     headers = {'X-FullContact-APIKey': full_contact_api_key}
 

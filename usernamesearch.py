@@ -23,7 +23,7 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.3
                          'Chrome/45.0.2454.93 Safari/537.36'}
 
 # Import data file with social media accounts
-with open('social/web_accounts_list.json') as data_file:
+with open('web_accounts_list.json') as data_file:
     data = json.load(data_file)
 
 
