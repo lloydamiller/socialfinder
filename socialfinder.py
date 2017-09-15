@@ -54,6 +54,15 @@ if __name__ == '__main__':
 
     username_list = list(set(username_list) - set(blanks))
 
+    username_list_fixed = []
+    for user in username_list:
+        user = re.sub(r'\W+', '', user).lower()
+        username_list_fixed.append(user)
+
+    username_list = username_list_fixed
+
+    username_list = list(set(username_list))
+
     for user in username_list:
         username_results.update(usernamesearch.check_username(user))
 
